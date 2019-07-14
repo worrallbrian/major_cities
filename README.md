@@ -7,11 +7,13 @@
 
 # American data includes all states and territories. Certain places (Texas, Hawaii, all territories, etc) have exhaustive list of cities, whereas certain states may only include 5,000+ populated places and/or county seats.
 
-# Regions are comma separated lists for when a city resides in more than 1 region.
+# Regions are comma separated lists for when a city resides in more than one region.
 
 # Flin Flon -> Saskatchewan / Manitoba and Flin Flon -> Manitoba / Saskatchewan appear as two different cities.
 
-# There are 2 separated cities named Reno in the state of Texas.
+# There are two separate cities named Reno in the state of Texas.
+
+# Independent cities (Baltimore, Carson City, Alexandria, etc) have their regions marked as "-".
 
 # major_cities fields -> id, name, region, province_id, country_id
 # major_cities.sql contains IDs to be associated with provinces_all and countries Tables.
