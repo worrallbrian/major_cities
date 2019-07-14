@@ -16,9 +16,9 @@
 # Independent cities (Baltimore, Carson City, Alexandria, etc) have their regions marked as "-".
 
 # major_cities fields -> id, name, region, province_id, country_id
-# major_cities.sql contains IDs to be associated with provinces_all and countries Tables.
+# major_cities.sql contains IDs to be associated with provinces_all and countries Tables. Contains both Canadian and American data.
 
 # major_cities_can fields -> id, name, region, province_id, country_id, most_recent_structuring
-# major_cities_can.sql contains IDs to be associated with provinces_all and countries Tables.
+# major_cities_can.sql contains IDs to be associated with provinces_all and countries Tables. Contains only Canadian data.
 
 # Kudos and professional connections are appreciated :)
