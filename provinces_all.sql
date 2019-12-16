@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `provinces_all` (
   `id` int(11) NOT NULL,
-  `name_short` varchar(3) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `name_short` varchar(11) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `name_long` varchar(27) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `country_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -95,7 +95,39 @@ INSERT INTO `provinces_all` (`id`, `name_short`, `name_long`, `country_id`) VALU
 (78, 'GU', 'Guam', 2),
 (79, 'MP', 'Northern Mariana Islands', 2),
 (80, 'PR', 'Puerto Rico', 2),
-(81, 'PI', 'Virgin Islands (USA)', 2);
+(81, 'PI', 'Virgin Islands (US)', 2),
+(82, 'AGU', 'Aguascalientes', 3),
+(83, 'BCN', 'Baja California', 3),
+(84, 'BCS', 'Baja California Sur', 3),
+(85, 'CAM', 'Campeche', 3),
+(86, 'CHP', 'Chiapas', 3),
+(87, 'CMX', 'Mexico City', 3),
+(88, 'CHH', 'Chihuahua', 3),
+(89, 'COA', 'Coahuila', 3),
+(90, 'COL', 'Colima', 3),
+(91, 'DUR', 'Durango', 3),
+(92, 'GUA', 'Guanajuato', 3),
+(93, 'GRO', 'Guerrero', 3),
+(94, 'HID', 'Hidalgo', 3),
+(95, 'JAL', 'Jalisco', 3),
+(96, 'MEX', 'México', 3),
+(97, 'MIC', 'Michoacán', 3),
+(98, 'MOR', 'Morelos', 3),
+(99, 'NAY', 'Nayarit', 3),
+(100, 'NLE', 'Nuevo León', 3),
+(101, 'OAX', 'Oaxaca', 3),
+(102, 'PUE', 'Puebla', 3),
+(103, 'QUE', 'Querétaro', 3),
+(104, 'ROO', 'Quintana Roo', 3),
+(105, 'SLP', 'San Luis Potosí', 3),
+(106, 'SIN', 'Sinaloa', 3),
+(107, 'SON', 'Sonora', 3),
+(108, 'TAB', 'Tabasco', 3),
+(109, 'TAM', 'Tamaulipas', 3),
+(110, 'TLA', 'Tlaxcala', 3),
+(111, 'VER', 'Veracruz', 3),
+(112, 'YUC', 'Yucatán', 3),
+(113, 'ZAC', 'Zacatecas', 3);
 
 --
 -- Indexes for dumped tables
@@ -116,7 +148,7 @@ ALTER TABLE `provinces_all`
 -- AUTO_INCREMENT for table `provinces_all`
 --
 ALTER TABLE `provinces_all`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=82;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=114;
 
 --
 -- Constraints for dumped tables

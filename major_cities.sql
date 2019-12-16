@@ -9,8 +9,6 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
--- --------------------------------------------------------
-
 --
 -- Table structure for table `major_cities`
 --
@@ -18,7 +16,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `major_cities` (
   `id` int(11) NOT NULL,
   `name` varchar(33) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `region` varchar(50) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `region` varchar(237) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `province_id` int(11) NOT NULL,
   `country_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -6914,7 +6912,122 @@ INSERT INTO `major_cities` (`id`, `name`, `region`, `province_id`, `country_id`)
 (6879, 'Pinedale', 'Sublette', 76, 2),
 (6880, 'Lusk', 'Niobrara', 76, 2),
 (6881, 'Basin', 'Big Horn', 76, 2),
-(6882, 'Sundance', 'Crook', 76, 2);
+(6882, 'Sundance', 'Crook', 76, 2),
+(6883, 'Mexico City', 'Álvaro Obregón, Azcapotzalco, Benito Juárez, Coyoacán, Cuajimalpa de Morelos, Cuauhtémoc, Gustavo A. Madero, Iztacalco, Iztapalapa, Magdalena Contreras, Miguel Hidalgo, Milpa Alta, Tláhuac, Tlalpan, Venustiano Carranza, Xochimilco', 87, 3),
+(6884, 'Ecatepec', 'Ecatepec de Morelos Municipality', 96, 3),
+(6885, 'Guadalajara', 'Guadalajara Municipality', 95, 3),
+(6886, 'Puebla', 'Puebla Municipality', 102, 3),
+(6887, 'Juárez', 'Juárez Municipality', 88, 3),
+(6888, 'Tijuana', 'Tijuana Municipality', 83, 3),
+(6889, 'León', 'León Municipality', 92, 3),
+(6890, 'Zapopan', 'Zapopan Municipality', 95, 3),
+(6891, 'Monterrey', 'Monterrey Municipality', 100, 3),
+(6892, 'Nezahualcóyotl', 'Nezahualcóyotl Municipality', 96, 3),
+(6893, 'Culiacán', 'Culiacán Municipality', 106, 3),
+(6894, 'Chihuahua', 'Chihuahua Municipality', 88, 3),
+(6895, 'Naucalpan', 'Naucalpan de Juárez Municipality', 96, 3),
+(6896, 'Mérida', 'Mérida Municipality', 112, 3),
+(6897, 'San Luis Potosí', 'San Luis Potosí Municipality', 105, 3),
+(6898, 'Aguascalientes', 'Aguascalientes Municipality', 82, 3),
+(6899, 'Hermosillo', 'Hermosillo Municipality', 107, 3),
+(6900, 'Saltillo', 'Saltillo Municipality', 89, 3),
+(6901, 'Mexicali', 'Mexicali Municipality', 83, 3),
+(6902, 'Guadalupe', 'Guadalupe Municipality', 100, 3),
+(6903, 'Acapulco', 'Acapulco de Juárez Municipality', 93, 3),
+(6904, 'Tlalnepantla', 'Tlalnepantla de Baz Municipality', 96, 3),
+(6905, 'Cancún', 'Benito Juárez Municipality', 104, 3),
+(6906, 'Querétaro', 'Querétaro Municipality', 103, 3),
+(6907, 'Chimalhuacán', 'Chimalhuacán Municipality', 96, 3),
+(6908, 'Torreón', 'Torreón Municipality', 89, 3),
+(6909, 'Morelia', 'Morelia Municipality', 97, 3),
+(6910, 'Reynosa', 'Reynosa Municipality', 109, 3),
+(6911, 'Tlaquepaque', 'Tlaquepaque Municipality', 95, 3),
+(6912, 'Tuxtla Gutiérrez', 'Tuxtla Gutiérrez Municipality', 86, 3),
+(6913, 'Durango', 'Durango Municipality', 91, 3),
+(6914, 'Toluca', 'Toluca Municipality', 96, 3),
+(6915, 'Ciudad López Mateos', 'Atizapán de Zaragoza Municipality', 96, 3),
+(6916, 'Cuautitlán Izcalli', 'Cuautitlán Izcalli Municipality', 96, 3),
+(6917, 'Ciudad Apodaca', 'Apodaca Municipality', 100, 3),
+(6918, 'Matamoros', 'Matamoros Municipality', 109, 3),
+(6919, 'San Nicolás de los Garza', 'San Nicolás de los Garza Municipality', 100, 3),
+(6920, 'Veracruz', 'Veracruz Municipality', 111, 3),
+(6921, 'Xalapa', 'Xalapa Municipality', 111, 3),
+(6922, 'Tonalá', 'Tonalá Municipality', 95, 3),
+(6923, 'Mazatlán', 'Mazatlán Municipality', 106, 3),
+(6924, 'Irapuato', 'Irapuato Municipality', 92, 3),
+(6925, 'Nuevo Laredo', 'Nuevo Laredo Municipality', 109, 3),
+(6926, 'Xico', 'Valle de Chalco Solidaridad Municipality', 96, 3),
+(6927, 'Villahermosa', 'Centro Municipality', 108, 3),
+(6928, 'General Escobedo', 'General Escobedo Municipality', 100, 3),
+(6929, 'Celaya', 'Celaya Municipality', 92, 3),
+(6930, 'Cuernavaca', 'Cuernavaca Municipality', 98, 3),
+(6931, 'Tepic', 'Tepic Municipality', 99, 3),
+(6932, 'Ixtapaluca', 'Ixtapaluca Municipality', 96, 3),
+(6933, 'Ciudad Victoria', 'Victoria Municipality', 109, 3),
+(6934, 'Ciudad Obregón', 'Cajeme Municipality', 107, 3),
+(6935, 'Tampico', 'Tampico Municipality', 109, 3),
+(6936, 'Ciudad Nicolás Romero', 'Nicolás Romero Municipality', 96, 3),
+(6937, 'Ensenada', 'Ensenada Municipality', 83, 3),
+(6938, 'Coacalco de Berriozábal', 'Coacalco de Berriozábal Municipality', 96, 3),
+(6939, 'Santa Catarina', 'Santa Catarina Municipality', 100, 3),
+(6940, 'Uruapan', 'Uruapan Municipality', 97, 3),
+(6941, 'Gómez Palacio', 'Gómez Palacio Municipality', 91, 3),
+(6942, 'Los Mochis', 'Ahome Municipality', 106, 3),
+(6943, 'Pachuca', 'Pachuca de Soto Municipality', 94, 3),
+(6944, 'Oaxaca', 'Oaxaca de Juárez Municipality', 101, 3),
+(6945, 'Soledad de Graciano Sánchez', 'Soledad de Graciano Sánchez Municipality', 105, 3),
+(6946, 'Tehuacán', 'Tehuacán Municipality', 102, 3),
+(6947, 'Ojo de Agua', 'Tecámac Municipality', 96, 3),
+(6948, 'Coatzacoalcos', 'Coatzacoalcos Municipality', 111, 3),
+(6949, 'Campeche', 'Campeche Municipality', 85, 3),
+(6950, 'Monclova', 'Monclova Municipality', 89, 3),
+(6951, 'La Paz', 'La Paz Municipality', 84, 3),
+(6952, 'Nogales', 'Nogales Municipality', 107, 3),
+(6953, 'Buenavista', 'Tultitlán Municipality', 96, 3),
+(6954, 'Puerto Vallarta', 'Puerto Vallarta Municipality', 95, 3),
+(6955, 'Tapachula', 'Tapachula Municipality', 86, 3),
+(6956, 'Ciudad Madero', 'Ciudad Madero Municipality', 109, 3),
+(6957, 'San Pablo de las Salinas', 'Tultitlán Municipality', 96, 3),
+(6958, 'Chilpancingo', 'Chilpancingo de los Bravo Municipality', 93, 3),
+(6959, 'Poza Rica', 'Poza Rica de Hidalgo Municipality', 111, 3),
+(6960, 'Chicoloapan de Juárez', 'Chicoloapan Municipality', 96, 3),
+(6961, 'Ciudad del Carmen', 'Carmen Municipality', 85, 3),
+(6962, 'Chalco de Díaz Covarrubias', 'Chalco Municipality', 96, 3),
+(6963, 'Jiutepec', 'Jiutepec Municipality', 98, 3),
+(6964, 'Salamanca', 'Salamanca Municipality', 92, 3),
+(6965, 'San Luis Río Colorado', 'San Luis Río Colorado Municipality', 107, 3),
+(6966, 'Cuautla', 'Cuautla Municipality', 98, 3),
+(6967, 'Ciudad Benito Juárez', 'Juárez Municipality', 100, 3),
+(6968, 'Chetumal', 'Othón P. Blanco Municipality', 104, 3),
+(6969, 'Piedras Negras', 'Piedras Negras Municipality', 89, 3),
+(6970, 'Playa del Carmen', 'Solidaridad Municipality', 104, 3),
+(6971, 'Zamora', 'Zamora Municipality', 97, 3),
+(6972, 'Córdoba', 'Córdoba Municipality', 111, 3),
+(6973, 'San Juan del Río', 'San Juan del Río Municipality', 103, 3),
+(6974, 'Colima', 'Colima Municipality', 90, 3),
+(6975, 'Ciudad Acuña', 'Acuña Municipality', 89, 3),
+(6976, 'Manzanillo', 'Manzanillo Municipality', 90, 3),
+(6977, 'Zacatecas', 'Zacatecas Municipality', 113, 3),
+(6978, 'Veracruz', 'Boca del Río Municipality', 111, 3),
+(6979, 'Ciudad Valles', 'Ciudad Valles Municipality', 105, 3),
+(6980, 'Guadalupe', 'Guadalupe Municipality', 113, 3),
+(6981, 'San Pedro Garza García', 'San Pedro Garza García Municipality', 100, 3),
+(6982, 'Naucalpan', 'Huixquilucan Municipality', 96, 3),
+(6983, 'Fresnillo', 'Fresnillo Municipality', 113, 3),
+(6984, 'Orizaba', 'Orizaba Municipality', 111, 3),
+(6985, 'Miramar', 'Altamira Municipality', 109, 3),
+(6986, 'Iguala', 'Iguala de la Independencia Municipality', 93, 3),
+(6987, 'Delicias', 'Delicias Municipality', 88, 3),
+(6988, 'Ciudad de Villa de Álvarez', 'Villa de Álvarez Municipality', 90, 3),
+(6989, 'Ciudad Cuauhtémoc', 'Cuauhtémoc Municipality', 88, 3),
+(6990, 'Navojoa', 'Navojoa Municipality', 107, 3),
+(6991, 'Guaymas', 'Guaymas Municipality', 107, 3),
+(6992, 'Minatitlán', 'Minatitlán Municipality', 111, 3),
+(6993, 'Cuautitlán', 'Cuautitlán Municipality', 96, 3),
+(6994, 'Texcoco', 'Texcoco Municipality', 96, 3),
+(6995, 'Hidalgo del Parral', 'Hidalgo del Parral Municipality', 88, 3),
+(6996, 'Tepexpan', 'Acolman Municipality', 96, 3),
+(6997, 'Tulancingo', 'Tulancingo de Bravo Municipality', 94, 3);
 
 --
 -- Indexes for dumped tables
@@ -6936,7 +7049,7 @@ ALTER TABLE `major_cities`
 -- AUTO_INCREMENT for table `major_cities`
 --
 ALTER TABLE `major_cities`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6883;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6998;
 
 --
 -- Constraints for dumped tables
@@ -6946,8 +7059,8 @@ ALTER TABLE `major_cities`
 -- Constraints for table `major_cities`
 --
 ALTER TABLE `major_cities`
-  ADD CONSTRAINT `mc_countries_k` FOREIGN KEY (`country_id`) REFERENCES `countries` (`id`),
-  ADD CONSTRAINT `mc_provinces_all_k` FOREIGN KEY (`province_id`) REFERENCES `provinces_all` (`id`);
+  ADD CONSTRAINT `mj_countries_k` FOREIGN KEY (`country_id`) REFERENCES `countries` (`id`),
+  ADD CONSTRAINT `mj_provinces_all_k` FOREIGN KEY (`province_id`) REFERENCES `provinces_all` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
