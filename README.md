@@ -7,6 +7,8 @@
 
 # American data includes all states and territories. Certain places (Texas, Hawaii, all territories, etc) have exhaustive list of cities, whereas certain states may only include 5,000+ populated places and/or county seats.
 
+# Mexican data includes all provinces, 1000+ populated places, and certain towns in remote areas.
+
 # Regions are comma separated lists for when a city resides in more than one region.
 
 # Flin Flon -> Saskatchewan / Manitoba and Flin Flon -> Manitoba / Saskatchewan appear as two different cities.
