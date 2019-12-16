@@ -20,7 +20,7 @@
 # Mexico City is big enough to comprise 16 different regions.
 
 # major_cities fields -> id, name, region, province_id, country_id
-# major_cities.sql contains IDs to be associated with provinces_all and countries Tables. Contains both Canadian and American data.
+# major_cities.sql contains IDs to be associated with provinces_all and countries Tables. Contains Canadian, American, and Mexican data.
 
 # major_cities_can fields -> id, name, region, province_id, country_id, most_recent_structuring
 # major_cities_can.sql contains IDs to be associated with provinces_all and countries Tables. Contains only Canadian data.
